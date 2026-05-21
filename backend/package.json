@@ -1,0 +1,22 @@
+{
+  "name": "tokencount-backend",
+  "version": "1.0.0",
+  "description": "TokenCount API — LangChain-powered LLM invoke service",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "engines": { "node": ">=20" },
+  "dependencies": {
+    "@langchain/anthropic": "^0.3.0",
+    "@langchain/core": "^0.3.0",
+    "@langchain/google-genai": "^0.2.0",
+    "@langchain/openai": "^0.3.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.0",
+    "express-rate-limit": "^7.4.0"
+  }
+}

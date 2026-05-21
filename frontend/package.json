@@ -1,0 +1,14 @@
+{
+  "name": "tokencount-frontend",
+  "version": "1.0.0",
+  "description": "TokenCount UI — static frontend served with runtime config",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": { "node": ">=20" },
+  "dependencies": {
+    "express": "^4.21.0"
+  }
+}

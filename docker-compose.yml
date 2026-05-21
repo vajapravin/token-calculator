@@ -1,0 +1,23 @@
+services:
+  backend:
+    build: ./backend
+    ports:
+      - "3000:3000"
+    env_file:
+      - path: ./backend/.env
+        required: false        # runs without keys; providers show "no server key"
+    environment:
+      FRONTEND_ORIGIN: http://localhost:8080
+    restart: unless-stopped
+
+  frontend:
+    build: ./frontend
+    ports:
+      - "8080:8080"
+    environment:
+      API_BASE: http://localhost:3000   # URL the *browser* uses to reach the API
+    volumes:
+      - ./frontend/public:/app/public
+    depends_on:
+      - backend
+    restart: unless-stopped
