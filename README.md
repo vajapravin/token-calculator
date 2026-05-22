@@ -1,6 +1,31 @@
 # TokenCount
 
-LLM token calculator with a client–server architecture:
+> **Live demo:** https://tokencount-web-3fb1c5c792ab.herokuapp.com/ — hosted on Heroku (Eco dyno: first load after idle takes ~10s while it wakes).
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white" alt="Node.js">
+  <img src="https://img.shields.io/badge/Express-000000?style=for-the-badge&logo=express&logoColor=white" alt="Express">
+  <img src="https://img.shields.io/badge/LangChain.js-1C3C3C?style=for-the-badge&logo=langchain&logoColor=white" alt="LangChain.js">
+</p>
+<p align="center">
+  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript">
+  <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5">
+  <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logoColor=white" alt="CSS3">
+</p>
+<p align="center">
+  <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" alt="Docker">
+  <img src="https://img.shields.io/badge/Docker%20Compose-2496ED?style=for-the-badge&logo=docker&logoColor=white" alt="Docker Compose">
+  <img src="https://img.shields.io/badge/Heroku-430098?style=for-the-badge&logo=heroku&logoColor=white" alt="Heroku">
+</p>
+<p align="center">
+  <img src="https://img.shields.io/badge/OpenAI-412991?style=for-the-badge&logo=openai&logoColor=white" alt="OpenAI">
+  <img src="https://img.shields.io/badge/Anthropic-191919?style=for-the-badge&logo=anthropic&logoColor=white" alt="Anthropic">
+  <img src="https://img.shields.io/badge/Google%20Gemini-8E75B2?style=for-the-badge&logo=googlegemini&logoColor=white" alt="Google Gemini">
+  <img src="https://img.shields.io/badge/Mistral-FA520F?style=for-the-badge&logo=mistralai&logoColor=white" alt="Mistral">
+  <img src="https://img.shields.io/badge/Groq%20·%20Together%20·%20Fireworks%20·%20DeepSeek%20·%20xAI%20·%20Cohere-555555?style=for-the-badge" alt="More providers">
+</p>
+
+LLM token calculator with a client–server (Level 5) architecture:
 
 - **frontend/** — static UI (token estimates, visualization, pricing table) served by a tiny Node server
 - **backend/** — Express API that runs LangChain.js server-side; API keys live here as env vars and never reach the browser
@@ -10,6 +35,17 @@ Browser ──► frontend (:8080, static files + /config.js)
    │
    └─ fetch ──► backend (:3000, /api/invoke) ──► OpenAI / Anthropic / Google / …
 ```
+
+## Demo video
+
+https://github.com/vajapravin/token-calculator/assets/demo.mp4
+
+[▶ Watch the demo](assets/demo.mp4) *(2.3 MB, MP4)*
+
+> For an inline video player on GitHub: open this README in GitHub's web editor and drag
+> `assets/demo.mp4` into it — GitHub uploads the file and inserts a URL that renders as a
+> player. Replace the placeholder link above with that URL. A committed `.mp4` linked
+> directly (like the link above) works everywhere but downloads instead of playing inline.
 
 ## Run locally with Docker
 
