@@ -21,8 +21,11 @@
   <img src="https://img.shields.io/badge/OpenAI-412991?style=for-the-badge&logo=openai&logoColor=white" alt="OpenAI">
   <img src="https://img.shields.io/badge/Anthropic-191919?style=for-the-badge&logo=anthropic&logoColor=white" alt="Anthropic">
   <img src="https://img.shields.io/badge/Google%20Gemini-8E75B2?style=for-the-badge&logo=googlegemini&logoColor=white" alt="Google Gemini">
+</p>
+<p align="center">
   <img src="https://img.shields.io/badge/Mistral-FA520F?style=for-the-badge&logo=mistralai&logoColor=white" alt="Mistral">
   <img src="https://img.shields.io/badge/Groq%20·%20Together%20·%20Fireworks%20·%20DeepSeek%20·%20xAI%20·%20Cohere-555555?style=for-the-badge" alt="More providers">
+  <img src="https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge" alt="MIT License">
 </p>
 
 LLM token calculator with a client–server (Level 5) architecture:
