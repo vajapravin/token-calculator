@@ -1,12 +1,12 @@
 // Tiny static server for the frontend.
 // Also serves /config.js generated from env, so the same image works
-// locally (API_BASE=http://localhost:3000) and on Heroku (your API app URL).
+// locally (API_BASE=http://frontend:3000) and on Heroku (your API app URL).
 import express from "express";
 
 const app = express();
 
 app.get("/config.js", (_req, res) => {
-  const apiBase = process.env.API_BASE || "http://localhost:3000";
+  const apiBase = process.env.API_BASE || "http://frontend:3000";
   res
     .type("application/javascript")
     .set("Cache-Control", "no-store")

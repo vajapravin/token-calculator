@@ -58,8 +58,8 @@ cp backend/.env.example backend/.env   # add the API keys you have
 docker compose up --build
 ```
 
-- UI: http://localhost:8080
-- API health: http://localhost:3000/api/health
+- UI: http://frontend:8080
+- API health: http://backend:3000/api/health
 
 Providers without a key still appear in the UI, marked "no server key".
 Settings → Backend status shows connectivity and which keys are configured.
