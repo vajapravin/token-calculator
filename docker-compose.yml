@@ -7,7 +7,7 @@ services:
       - path: ./backend/.env
         required: false        # runs without keys; providers show "no server key"
     environment:
-      FRONTEND_ORIGIN: http://frontend:8080
+      FRONTEND_ORIGIN: http://localhost:8080,http://127.0.0.1:8080,http://frontend:8080
     restart: unless-stopped
     networks:
       - app-net

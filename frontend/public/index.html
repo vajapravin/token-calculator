@@ -583,7 +583,7 @@ window.addEventListener('load', ()=>{ renderProviderTabs(); renderAll(); });
 
 <script>
 /* ================= Backend-driven invoke ================= */
-const API = String(window.API_BASE || 'http://backend:3000').replace(/\/$/, '');
+const API = String(window.API_BASE || 'http://localhost:3000').replace(/\/$/, '');
 let PROVIDERS_LIVE = [];   // fetched from GET /api/providers
 let labSel = null;
 let backendOK = false;
