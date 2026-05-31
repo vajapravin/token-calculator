@@ -6,7 +6,7 @@ import express from "express";
 const app = express();
 
 app.get("/config.js", (_req, res) => {
-  const apiBase = process.env.API_BASE || "http://localhost:3000";
+  const apiBase = process.env.API_BASE;
   res
     .type("application/javascript")
     .set("Cache-Control", "no-store")
