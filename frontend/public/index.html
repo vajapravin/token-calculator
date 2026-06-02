@@ -1309,7 +1309,7 @@
   <script>
     /* ================= Backend-driven invoke ================= */
     const API = String(window.API_BASE).replace(/\/$/, '');
-    let PROVIDERS_LIVE = [];   // fetched from GET /api/providers
+    let PROVIDERS_LIVE = [];   // fetched from GET /providers
     let labSel = null;
     let backendOK = false;
 
@@ -1333,7 +1333,7 @@
     /* ---------- providers from the backend ---------- */
     async function loadProviders() {
       try {
-        const r = await fetch(API + '/api/providers');
+        const r = await fetch(API + '/providers');
         if (!r.ok) throw new Error('HTTP ' + r.status);
         PROVIDERS_LIVE = await r.json();
         backendOK = true;
@@ -1422,7 +1422,7 @@
 
       try {
         setLoader('Waiting for ' + p.label + '…');
-        const r = await fetch(API + '/api/invoke', {
+        const r = await fetch(API + '/invoke', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({
