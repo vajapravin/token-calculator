@@ -1,6 +1,6 @@
 # TokenCount
 
-> **Live demo:** https://tokencount-web-3fb1c5c792ab.herokuapp.com/ — hosted on Heroku (Eco dyno: first load after idle takes ~10s while it wakes).
+> **Live demo:** https://tokencount.vajapravin.me/ — hosted on Heroku (Eco dyno: first load after idle takes ~10s while it wakes).
 
 <p align="center">
   <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white" alt="Node.js">
