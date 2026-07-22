@@ -38,7 +38,8 @@ Browser ──► frontend (:8080, static files + /config.js)
 
 ## Demo video
 
-https://github.com/vajapravin/token-calculator/assets/demo.mp4
+https://github.com/user-attachments/assets/2c73e658-5c39-4650-a14b-50ad4a274689
+
 
 [▶ Watch the demo](assets/demo.mp4) *(2.3 MB, MP4)*
 
