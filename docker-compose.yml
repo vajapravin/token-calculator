@@ -4,8 +4,7 @@ services:
     ports:
       - "3000:3000"
     env_file:
-      - path: ./backend/.env
-        required: false        # runs without keys; providers show "no server key"
+      - ./backend/.env
     environment:
       FRONTEND_ORIGIN: http://localhost:8080,http://127.0.0.1:8080,http://frontend:8080
     restart: unless-stopped
