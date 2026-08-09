@@ -6,7 +6,7 @@ services:
     env_file:
       - ./backend/.env
     environment:
-      FRONTEND_ORIGIN: http://localhost:8080,http://127.0.0.1:8080,http://frontend:8080
+      FRONTEND_ORIGIN: http://vajapravin.me:8080
     restart: unless-stopped
     networks:
       - app-net
@@ -16,7 +16,7 @@ services:
     ports:
       - "8080:8080"
     environment:
-      API_BASE: http://localhost:3000   # URL the *browser* uses to reach the API
+      API_BASE: http://vajapravin.me:3000
     volumes:
       - ./frontend/public:/app/public
     depends_on:
