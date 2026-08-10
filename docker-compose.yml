@@ -6,7 +6,7 @@ services:
     env_file:
       - ./backend/.env
     environment:
-      FRONTEND_ORIGIN: https://apps.vajapravin.me/github/vajapravin/token-calculator
+      FRONTEND_ORIGIN: https://apps.vajapravin.me
     restart: unless-stopped
     networks:
       - app-net
@@ -16,7 +16,7 @@ services:
     ports:
       - "8080:8080"
     environment:
-      API_BASE: https://apps.vajapravin.me/github/vajapravin/token-calculator/api
+      API_BASE: https://apps.vajapravin.me/api
     volumes:
       - ./frontend/public:/app/public
     depends_on:
